@@ -1,11 +1,11 @@
 <?php
 
-namespace Ak\OpenAPI\Services;
+namespace CodeYi\Lingxing\Services;
 
-use Ak\OpenAPI\Dto\AccessTokenDto;
-use Ak\OpenAPI\Exception\GenerateAccessTokenException;
-use Ak\OpenAPI\Exception\InvalidAccessTokenException;
-use Ak\OpenAPI\Exception\RequiredParamsEmptyException;
+use CodeYi\Lingxing\Dto\AccessTokenDto;
+use CodeYi\Lingxing\Exception\GenerateAccessTokenException;
+use CodeYi\Lingxing\Exception\InvalidAccessTokenException;
+use CodeYi\Lingxing\Exception\RequiredParamsEmptyException;
 
 class OpenAPIRequestService
 {
@@ -23,7 +23,7 @@ class OpenAPIRequestService
      * @param string $appId
      * @param string $appSecret
      *
-     * @throws \Ak\OpenAPI\Exception\RequiredParamsEmptyException
+     * @throws \CodeYi\Lingxing\Exception\RequiredParamsEmptyException
      */
     public function __construct($host, $appId, $appSecret)
     {
@@ -45,9 +45,9 @@ class OpenAPIRequestService
      * @param array  $headers   请求头，如需要
      *
      * @return array
-     * @throws \Ak\OpenAPI\Exception\InvalidAccessTokenException
-     * @throws \Ak\OpenAPI\Exception\InvalidResponseException
-     * @throws \Ak\OpenAPI\Exception\RequestException
+     * @throws \CodeYi\Lingxing\Exception\InvalidAccessTokenException
+     * @throws \CodeYi\Lingxing\Exception\InvalidResponseException
+     * @throws \CodeYi\Lingxing\Exception\RequestException
      * @throws \Exception
      */
     public function makeRequest($routeName, $method, $params = [], $headers = [])
@@ -80,9 +80,9 @@ class OpenAPIRequestService
      *
      * @return AccessTokenDto
      *
-     * @return \Ak\OpenAPI\Dto\AccessTokenDto
-     * @throws \Ak\OpenAPI\Exception\InvalidResponseException
-     * @throws \Ak\OpenAPI\Exception\RequestException
+     * @return \CodeYi\Lingxing\Dto\AccessTokenDto
+     * @throws \CodeYi\Lingxing\Exception\InvalidResponseException
+     * @throws \CodeYi\Lingxing\Exception\RequestException
      */
 
     public function generateAccessToken()
@@ -103,9 +103,9 @@ class OpenAPIRequestService
      *
      * @param $refreshToken
      *
-     * @return \Ak\OpenAPI\Dto\AccessTokenDto
-     * @throws \Ak\OpenAPI\Exception\InvalidResponseException
-     * @throws \Ak\OpenAPI\Exception\RequestException
+     * @return \CodeYi\Lingxing\Dto\AccessTokenDto
+     * @throws \CodeYi\Lingxing\Exception\InvalidResponseException
+     * @throws \CodeYi\Lingxing\Exception\RequestException
      */
     public function refreshToken($refreshToken)
     {
@@ -147,7 +147,7 @@ class OpenAPIRequestService
      * @param $refreshToken
      * @param $expireAt
      *
-     * @throws \Ak\OpenAPI\Exception\GenerateAccessTokenException
+     * @throws \CodeYi\Lingxing\Exception\GenerateAccessTokenException
      */
     public function setAccessToken($accessToken, $refreshToken = '', $expireAt = '')
     {

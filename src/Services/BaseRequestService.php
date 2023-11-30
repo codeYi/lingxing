@@ -1,9 +1,9 @@
 <?php
 
-namespace Ak\OpenAPI\Services;
+namespace CodeYi\Lingxing\Services;
 
-use Ak\OpenAPI\Exception\InvalidResponseException;
-use Ak\OpenAPI\Exception\RequestException;
+use CodeYi\Lingxing\Exception\InvalidResponseException;
+use CodeYi\Lingxing\Exception\RequestException;
 
 class BaseRequestService
 {
@@ -13,8 +13,8 @@ class BaseRequestService
      * @param array $params
      *
      * @return array
-     * @throws \Ak\OpenAPI\Exception\InvalidResponseException
-     * @throws \Ak\OpenAPI\Exception\RequestException
+     * @throws \CodeYi\Lingxing\Exception\InvalidResponseException
+     * @throws \CodeYi\Lingxing\Exception\RequestException
      */
     public static function sendPost($url, $params = [], $headers = [])
     {
@@ -27,8 +27,8 @@ class BaseRequestService
      * @param array $params
      *
      * @return array
-     * @throws \Ak\OpenAPI\Exception\InvalidResponseException
-     * @throws \Ak\OpenAPI\Exception\RequestException
+     * @throws \CodeYi\Lingxing\Exception\InvalidResponseException
+     * @throws \CodeYi\Lingxing\Exception\RequestException
      */
     public static function sendGet($url, $params = [], $headers = [])
     {
@@ -47,8 +47,8 @@ class BaseRequestService
      * @param array $headers
      *
      * @return array
-     * @throws \Ak\OpenAPI\Exception\InvalidResponseException
-     * @throws \Ak\OpenAPI\Exception\RequestException
+     * @throws \CodeYi\Lingxing\Exception\InvalidResponseException
+     * @throws \CodeYi\Lingxing\Exception\RequestException
      */
     public static function sendRequest($method, $url, $params = '', $headers = [])
     {

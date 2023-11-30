@@ -1,6 +1,6 @@
 <?php
 
-namespace Ak\OpenAPI\Dto;
+namespace CodeYi\Lingxing\Dto;
 
 class AccessTokenDto
 {

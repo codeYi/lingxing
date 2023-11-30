@@ -1,11 +1,11 @@
 {
-    "name": "ak/openapi",
+    "name": "yolo_me/lingxing",
     "description": "a openapi sdk",
     "license": "MIT",
     "authors": [
         {
-            "name": "罗迪",
-            "email": "luodi@lingxing.com"
+            "name": "yolo_me",
+            "email": "yolo_me@163.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ak\\OpenAPI\\": "src/"
+            "CodeYi\\Lingxing\\": "src/"
         }
     }
 }

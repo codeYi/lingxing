@@ -1,6 +1,6 @@
 <?php
 
-namespace Ak\OpenAPI\Exception;
+namespace CodeYi\Lingxing\Exception;
 
 use Exception;
 

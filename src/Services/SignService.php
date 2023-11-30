@@ -1,8 +1,8 @@
 <?php
 
-namespace Ak\OpenAPI\Services;
+namespace CodeYi\Lingxing\Services;
 
-use Ak\OpenAPI\Exception\EncryptException;
+use CodeYi\Lingxing\Exception\EncryptException;
 
 class SignService
 {
