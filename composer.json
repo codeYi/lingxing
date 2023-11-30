@@ -1,17 +1,21 @@
 {
-    "name": "yolo_me/lingxing",
-    "description": "领星erp sdk",
-    "type": "library",
-    "keywords": ["lingxing","erp","amazon"],
-    "license": "Mit",
+    "name": "ak/openapi",
+    "description": "a openapi sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "罗迪",
+            "email": "luodi@lingxing.com"
+        }
+    ],
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-openssl": "*"
+    },
     "autoload": {
         "psr-4": {
-            "yolo_me\\lingxing\\": "src/"
+            "Ak\\OpenAPI\\": "src/"
         }
-    },
-    "require": {
-        "php": ">=7.4.3",
-        "guzzlehttp/guzzle": "^7.5.0",
-        "ext-json": "*"
     }
 }
