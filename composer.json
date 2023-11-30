@@ -1,0 +1,17 @@
+{
+    "name": "yolo_me/lingxing",
+    "description": "领星erp sdk",
+    "type": "library",
+    "keywords": ["lingxing","erp","amazon"],
+    "license": "Mit",
+    "autoload": {
+        "psr-4": {
+            "yolo_me\\lingxing\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4.3",
+        "guzzlehttp/guzzle": "^7.5.0",
+        "ext-json": "*"
+    }
+}
