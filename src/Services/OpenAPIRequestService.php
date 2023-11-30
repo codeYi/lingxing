@@ -2,6 +2,7 @@
 
 namespace CodeYi\Lingxing\Services;
 
+use CodeYi\Lingxing\Constants\ServeHttp;
 use CodeYi\Lingxing\Dto\AccessTokenDto;
 use CodeYi\Lingxing\Exception\GenerateAccessTokenException;
 use CodeYi\Lingxing\Exception\InvalidAccessTokenException;
@@ -30,7 +31,7 @@ class OpenAPIRequestService
         if (empty($host) || empty($appId) || empty($appSecret)) {
             throw new RequiredParamsEmptyException();
         }
-        
+
         $this->host = rtrim($host, '/');
         $this->appId = $appId;
         $this->appSecret = !BaseRequestService::isUrlEncoded($appSecret) ? $appSecret : urldecode($appSecret);
