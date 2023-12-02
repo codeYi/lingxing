@@ -204,4 +204,30 @@ interface ServeHttp
     //删除产品标签
     const DELETE_PRODUCT_LABEL = '/label/operation/v1/label/product/unmarkLabel';
 
+    #========================仓库==========================
+    //查询FBA库存列表
+    const QUERY_FBA_STOCK = '/erp/sc/routing/fba/fbaStock/fbaList';
+
+    //查询仓库库存明细
+    const QUERY_INVENTORY_DETAIL = '/erp/sc/routing/data/local_inventory/inventoryDetails';
+
+    //查询仓位库存明细
+    const QUERY_INVENTORY_LOCATION_DETAIL = '/erp/sc/routing/data/local_inventory/inventoryBinDetails';
+
+    //查询批次明细
+    const QUERY_INVENTORY_BATCH_DETAIL = '/erp/sc/routing/data/local_inventory/getBatchDetailList';
+
+    //查询批次流水
+    const QUERY_INVENTORY_BATCH = '/erp/sc/routing/data/local_inventory/getBatchStatementList';
+
+    //查询库存流水（旧）
+    const QUERY_INVENTORY_LOG_OLD = '/erp/sc/routing/data/local_inventory/wareHouseStatement';
+
+    //查询库存流水（新）
+    const QUERY_INVENTORY_LOG_NEW = '/erp/sc/routing/inventoryLog/WareHouseInventory/wareHouseCenterStatement';
+
+    //查询仓位流水
+    const QUERY_LOCATION_LOG = '/erp/sc/routing/data/local_inventory/wareHouseBinStatement';
+
+
 }
