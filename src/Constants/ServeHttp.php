@@ -60,6 +60,74 @@ interface ServeHttp
     //查询售后订单列表
     const QUERY_AFTER_ORDER = '/erp/sc/routing/amzod/order/afterSaleList';
 
+    //查询亚马逊Listing
+    const QUERY_LISTING = '/erp/sc/data/mws/listing';
+
+    //批量分配Listing负责人
+    const UPDATE_LISTING_PRINCIPAL = '/listing/listing/open/api/asin/updatePrincipal';
+
+    //批量添加/编辑Listing配对
+    const UPDATE_LISTING_MATCH = '/erp/sc/storage/product/link';
+
+    //批量修改Listing价格
+    const UPDATE_LISTING_PRICE = '/erp/sc/listing/ProductPricing/pricingSubmit';
+
+    //批量获取Listing费用
+    const QUERY_LISTING_PRICES = '/listing/listing/open/api/listing/getPrices';
+
+    //查询Listing标记标签列表
+    const QUERY_LISTING_TAG_LABEL = '/basicOpen/listingManage/queryListingRelationTagList';
+
+    //查询Listing标签列表
+    const QUERY_LISTING_TAG = '/basicOpen/globalTag/listing/page/list';
+
+    //添加Listing标签
+    const CREATE_LISTING_LABEL = '/basicOpen/globalTag/listing/addTag';
+
+    //删除Listing标签
+    const DELETE_LISTING_LABEL = '/basicOpen/globalTag/listing/removeTag';
+
+    //FBA费差异-异常订单-订单
+    const  QUERY_DIFFERENCE_FEE ='/basicOpen/openapi/sale/fbaFeeDifference/order/list';
+
+    //FBA费差异-异常订单-MSKU
+    const  QUERY_DIFFERENCE_MSKU ='/basicOpen/openapi/sale/fbaFeeDifference/msku/list';
+
+    //查询Listing操作日志列表
+    const  QUERY_LISTING_LOGS ='/basicOpen/listingManage/listingOperateLog/pageList';
+
+    //修改B2B价格
+    const  UPDATE_B2B_PRICE ='/basicOpen/b2bPrice/modifyPrice';
+
+    //查询亚马逊自发货订单列表
+    const  QUERY_ROUTING_ORDER ='/erp/sc/routing/order/Order/getOrderList';
+
+    //查询亚马逊自发货订单详情
+    const  QUERY_ROUTING_ORDER_DETAIL ='/erp/sc/routing/order/Order/getOrderDetail';
+
+    //亚马逊订单提交标发
+    const  UPDATE_ORDER_SUBMIT ='/pb/mp/order/submitFulfillment';
+
+    //获取亚马逊标发结果
+    const  QUERY_FILL_RESULT ='/pb/mp/order/getFulfillmentResult';
+
+    //查询促销活动列表-优惠券
+    const  QUERY_ACTIVITIES_COUPON ='/basicOpen/promotionalActivities/coupon/list';
+
+    //查询促销活动列表-秒杀
+    const  QUERY_ACTIVITIES_SEC_KILL ='/basicOpen/promotionalActivities/secKill/list';
+
+    //查询促销活动列表-管理促销
+    const  QUERY_ACTIVITIES_MANAGE_LIST ='/basicOpen/promotionalActivities/manage/list';
+
+    //查询促销活动列表-会员折扣
+    const  QUERY_ACTIVITIES_DISCOUNT ='/basicOpen/promotionalActivities/vipDiscount/list';
+
+    //查询商品折扣列表
+    const  QUERY_DISCOUNT ='/basicOpen/promotion/listingList';
+
+
+
     #==================商品信息===================
 
     //创建UPC编码
@@ -135,15 +203,5 @@ interface ServeHttp
 
     //删除产品标签
     const DELETE_PRODUCT_LABEL = '/label/operation/v1/label/product/unmarkLabel';
-
-
-
-
-
-
-
-
-
-
 
 }
