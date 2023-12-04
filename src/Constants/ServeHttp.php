@@ -229,5 +229,131 @@ interface ServeHttp
     //查询仓位流水
     const QUERY_LOCATION_LOG = '/erp/sc/routing/data/local_inventory/wareHouseBinStatement';
 
+    #=======================广告=======================
+    //查询广告账号列表
+    const QUERY_ADVERTISING_ACCOUNT = '/basicOpen/baseData/account/list';
+
+    //广告组合
+    const QUERY_ADVERTISING_GROUP = '/pb/openapi/newad/portfolios';
+
+    //SP广告组
+    const QUERY_ADVERTISING_GROUP_SP = '/pb/openapi/newad/spAdGroups';
+
+    //SP广告活动
+    const QUERY_ADVERTISING_ACTIVITY_SP = '/pb/openapi/newad/spCampaigns';
+
+    //SP关键词
+    const QUERY_ADVERTISING_KEYWORDS_SP = '/pb/openapi/newad/spKeywords';
+
+    //SP商品广告
+    const QUERY_ADVERTISING_PRODUCT = '/pb/openapi/newad/spProductAds';
+
+    //SP商品定位
+    const QUERY_LOCATION_SP = '/pb/openapi/newad/spTargets';
+
+    //SP否定投放
+    const QUERY_PUT_IN_SP = '/pb/openapi/newad/spNegativeTargetsOrKeywords';
+
+    //SB广告组
+    const QUERY_ADVERTISING_GROUP_SB = '/pb/openapi/newad/hsaAdGroups';
+
+    //SB广告活动
+    const QUERY_ADVERTISING_ACTIVITY_SB = '/pb/openapi/newad/hsaCampaigns';
+
+    //SB否定关键词
+    const QUERY_ADVERTISING_KEYWORDS_SB = '/pb/openapi/newad/hsaNegativeKeywords';
+
+    //SB否定商品投放
+    const QUERY_ADVERTISING_PRODUCT_SB = '/pb/openapi/newad/hsaNegativeTargets';
+
+    //SB、SBV广告的投放基础数据
+    const QUERY_ADVERTISING_BASE_SB = '/pb/openapi/newad/sbTargeting';
+
+    //SD广告组
+    const QUERY_ADVERTISING_GROUP_SD = '/pb/openapi/newad/sdAdGroups';
+
+    //SD广告活动
+    const QUERY_ADVERTISING_ACTIVITY_SD = '/pb/openapi/newad/sdCampaigns';
+
+    //SD是否商品定位
+    const QUERY_LOCATION_PRODUCT_SD = '/pb/openapi/newad/sdNegativeTargets';
+
+    //SD商品广告
+    const QUERY_ADVERTISING_PRODUCT_SD = '/pb/openapi/newad/sdProductAds';
+
+    //SD商品定位
+    const QUERY_HAS_LOCATION_PRODUCT_SD = '/pb/openapi/newad/sdTargets';
+
+    //SP广告组报表
+    const QUERY_REPORTS_GROUP_SP = '/pb/openapi/newad/spAdGroupReports';
+
+    //SP广告活动报表
+    const QUERY_REPORTS_ACTIVITY_SP = '/pb/openapi/newad/spCampaignReports';
+
+    //SP关键词报表
+    const QUERY_REPORTS_KEYWORDS_SP = '/pb/openapi/newad/spKeywordReports';
+
+    //SP广告商品报表
+    const QUERY_REPORTS_PRODUCT_SP = '/pb/openapi/newad/spProductAdReports';
+
+    //SP商品定位报表
+    const QUERY_REPORTS_LOCATION_PRODUCT_SP = '/pb/openapi/newad/spTargetReports';
+
+    //SP广告位报告
+    const QUERY_REPORTS_LOCATION_SP = '/pb/openapi/newad/campaignPlacementReports';
+
+    //SP已购买商品报表
+    const QUERY_REPORTS_BOOKED_SP = '/pb/openapi/newad/asinReports';
+
+    //SP用户搜索词报表
+    const QUERY_REPORTS_SEARCH_KEYWORDS_SP = '/pb/openapi/newad/queryWordReports';
+
+    //SB广告组报表
+    const QUERY_REPORTS_GROUP_SB = '/pb/openapi/newad/hsaAdGroupReports';
+
+    //SB广告活动报表
+    const QUERY_REPORTS_ACTIVITY_SB = '/pb/openapi/newad/hsaCampaignReports';
+
+    //SB关键词-广告位报告
+    const QUERY_REPORTS_KEYWORDS_LOCATION_SB = '/pb/openapi/newad/listHsaKeywordPlacementReport';
+
+    //SB广告的投放报告
+    const QUERY_REPORTS_PUT_IN_SB = '/pb/openapi/newad/listHsaTargetingReport';
+
+    //SB广告位报告
+    const QUERY_REPORTS_LOCATION_SB = '/pb/openapi/newad/hsaCampaignPlacementReports';
+
+    //SB用户搜索词报表
+    const QUERY_REPORTS_KEYWORDS_SB = '/pb/openapi/newad/hsaQueryWordReports';
+
+    //SB广告归因于广告的购买报告
+    const QUERY_REPORTS_PURCHASE_SB = '/pb/openapi/newad/hsaPurchasedAsinReports';
+
+    //SD广告组报表
+    const QUERY_REPORTS_GROUP_SD = '/pb/openapi/newad/sdAdGroupReports';
+
+    //SD广告活动报表
+    const QUERY_REPORTS_ACTIVITY_SD = '/pb/openapi/newad/sdCampaignReports';
+
+    //SD广告商品报表
+    const QUERY_REPORTS_PRODUCT_SD = '/pb/openapi/newad/sdProductAdReports';
+
+    //SD商品定位报表
+    const QUERY_REPORTS_LOCATION_PRODUCT_SD = '/pb/openapi/newad/sdTargetReports';
+
+    //SD已购买商品报表
+    const QUERY_REPORTS_BOOKED_SD = '/pb/openapi/newad/sdAsinReports';
+
+    //SD匹配的目标报表
+    const QUERY_REPORTS_MATCH_SD = '/pb/openapi/newad/sdMatchTargetReports';
+
+    //查询DSP报告列表-订单
+    const QUERY_REPORTS_ORDER_LIST = '/basicOpen/dspReport/order/list';
+
+    //ABA搜索词报告-按周维度
+    const EXPORT_ABA_REPORT = '/pb/openapi/newad/abaReport';
+
+    //操作日志（新）
+    const QUERY_LOG_OPERATE = '/pb/openapi/newad/apiLogStandard';
 
 }
