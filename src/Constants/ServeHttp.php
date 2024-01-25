@@ -88,44 +88,43 @@ interface ServeHttp
     const DELETE_LISTING_LABEL = '/basicOpen/globalTag/listing/removeTag';
 
     //FBA费差异-异常订单-订单
-    const  QUERY_DIFFERENCE_FEE ='/basicOpen/openapi/sale/fbaFeeDifference/order/list';
+    const  QUERY_DIFFERENCE_FEE = '/basicOpen/openapi/sale/fbaFeeDifference/order/list';
 
     //FBA费差异-异常订单-MSKU
-    const  QUERY_DIFFERENCE_MSKU ='/basicOpen/openapi/sale/fbaFeeDifference/msku/list';
+    const  QUERY_DIFFERENCE_MSKU = '/basicOpen/openapi/sale/fbaFeeDifference/msku/list';
 
     //查询Listing操作日志列表
-    const  QUERY_LISTING_LOGS ='/basicOpen/listingManage/listingOperateLog/pageList';
+    const  QUERY_LISTING_LOGS = '/basicOpen/listingManage/listingOperateLog/pageList';
 
     //修改B2B价格
-    const  UPDATE_B2B_PRICE ='/basicOpen/b2bPrice/modifyPrice';
+    const  UPDATE_B2B_PRICE = '/basicOpen/b2bPrice/modifyPrice';
 
     //查询亚马逊自发货订单列表
-    const  QUERY_ROUTING_ORDER ='/erp/sc/routing/order/Order/getOrderList';
+    const  QUERY_ROUTING_ORDER = '/erp/sc/routing/order/Order/getOrderList';
 
     //查询亚马逊自发货订单详情
-    const  QUERY_ROUTING_ORDER_DETAIL ='/erp/sc/routing/order/Order/getOrderDetail';
+    const  QUERY_ROUTING_ORDER_DETAIL = '/erp/sc/routing/order/Order/getOrderDetail';
 
     //亚马逊订单提交标发
-    const  UPDATE_ORDER_SUBMIT ='/pb/mp/order/submitFulfillment';
+    const  UPDATE_ORDER_SUBMIT = '/pb/mp/order/submitFulfillment';
 
     //获取亚马逊标发结果
-    const  QUERY_FILL_RESULT ='/pb/mp/order/getFulfillmentResult';
+    const  QUERY_FILL_RESULT = '/pb/mp/order/getFulfillmentResult';
 
     //查询促销活动列表-优惠券
-    const  QUERY_ACTIVITIES_COUPON ='/basicOpen/promotionalActivities/coupon/list';
+    const  QUERY_ACTIVITIES_COUPON = '/basicOpen/promotionalActivities/coupon/list';
 
     //查询促销活动列表-秒杀
-    const  QUERY_ACTIVITIES_SEC_KILL ='/basicOpen/promotionalActivities/secKill/list';
+    const  QUERY_ACTIVITIES_SEC_KILL = '/basicOpen/promotionalActivities/secKill/list';
 
     //查询促销活动列表-管理促销
-    const  QUERY_ACTIVITIES_MANAGE_LIST ='/basicOpen/promotionalActivities/manage/list';
+    const  QUERY_ACTIVITIES_MANAGE_LIST = '/basicOpen/promotionalActivities/manage/list';
 
     //查询促销活动列表-会员折扣
-    const  QUERY_ACTIVITIES_DISCOUNT ='/basicOpen/promotionalActivities/vipDiscount/list';
+    const  QUERY_ACTIVITIES_DISCOUNT = '/basicOpen/promotionalActivities/vipDiscount/list';
 
     //查询商品折扣列表
-    const  QUERY_DISCOUNT ='/basicOpen/promotion/listingList';
-
+    const  QUERY_DISCOUNT = '/basicOpen/promotion/listingList';
 
 
     #==================商品信息===================
@@ -356,4 +355,75 @@ interface ServeHttp
     //操作日志（新）
     const QUERY_LOG_OPERATE = '/pb/openapi/newad/apiLogStandard';
 
+    #===================财务=====================
+    //查询回款记录
+    const QUERY_FUND_TRANSFERS = '/erp/sc/data/mws/fundTransfers';
+    //查询费用类型
+    const QUERY_FUND_TYPE = '/bd/fee/management/open/feeManagement/otherFee/type';
+    //查询费用明细列表
+    const QUERY_FUND_DETAIL = '/bd/fee/management/open/feeManagement/otherFee/list';
+    //创建费用单
+    const CREATE_FUND = '/bd/fee/management/open/feeManagement/otherFee/create';
+    //编辑费用单
+    const EDIT_FUND = '/bd/fee/management/open/feeManagement/otherFee/edit';
+    //作废费用单
+    const DISCARD_FUND = '/bd/fee/management/open/feeManagement/otherFee/discard';
+    //删除费用单
+    const DELETE_FUND = '/bd/fee/management/open/feeManagement/otherFee/delete';
+    //查询利润报表-MSKU
+    const QUERY_PROFIT_MSKU = '/bd/profit/report/open/report/msku/list';
+    //查询利润报表-ASIN
+    const QUERY_PROFIT_ASIN = '/bd/profit/report/open/report/asin/list';
+    //查询利润报表-父ASIN
+    const QUERY_PROFIT_PARENT_ASIN = '/bd/profit/report/open/report/parent/asin/list';
+    //查询利润报表-SKU
+    const QUERY_PROFIT_SKU = '/bd/profit/report/open/report/sku/list';
+    //查询利润报表-店铺
+    const QUERY_PROFIT_SHOP = '/bd/profit/report/open/report/seller/list';
+    //查询利润报表-店铺汇总
+    const QUERY_PROFIT_SHOP_SUM = '/bd/profit/report/open/report/seller/summary/list';
+    //查询利润报表-订单
+    const QUERY_PROFIT_ORDER = '/bd/profit/report/open/report/order/list';
+    //查询利润报表（旧）-MSKU
+    const QUERY_PROFIT_OLD_MSKU = '/erp/sc/routing/finance/ProfitState/profitMsku';
+    //查询利润报表（旧）-ASIN（父级）
+    const QUERY_PROFIT_OLD_ASIN = '/erp/sc/routing/finance/ProfitState/profitAsin';
+    //查询利润报表（旧）-ASIN（子级）
+    const QUERY_PROFIT_OLD_CHILD_ASIN = '/erp/sc/routing/finance/ProfitState/profitAsinSon';
+    //查询利润报表（旧）-结算明细
+    const QUERY_PROFIT_OLD_SETTLEMENT = '/erp/sc/routing/finance/ProfitState/profitSettlement';
+    //查询结算中心 - 结算汇总
+    const QUERY_SETTLEMENT_CENTER = '/bd/sp/api/open/settlement/summary/list';
+    //查询结算中心 - 交易明细
+    const QUERY_SETTLEMENT_CENTER_DETAIL = '/bd/sp/api/open/settlement/transaction/detail/list';
+    //查询亚马逊库存分类账detail数据
+    const QUERY_AMAZON_INVENTORY = '/cost/center/ods/detail/query';
+    //查询亚马逊库存分类账summary数据
+    const QUERY_AMAZON_INVENTORY_SUMMARY = '/cost/center/ods/summary/query';
+    //查询发货结算报告
+    const QUERY_DELIVERY_SETTLEMENT = '/cost/center/api/settlement/report';
+    //查询settlement下载URL
+    const QUERY_SETTLEMENT_DOWNLOAD_URL = '/bd/sp/api/open/settlement/export/url/get';
+    //查询FBA成本计价流水
+    const QUERY_FBA_COST = '/cost/center/api/cost/stream';
+    //查询广告发票列表
+    const QUERY_AD_INVOICE = '/bd/profit/report/open/report/ads/invoice/list';
+    //查询广告发票活动列表
+    const QUERY_AD_INVOICE_ACTIVITY = '/bd/profit/report/open/report/ads/invoice/campaign/list';
+    //查询广告发票基本信息
+    const QUERY_AD_INVOICE_BASE = '/bd/profit/report/open/report/ads/invoice/detail';
+    //立即重算-利润报表数据
+    const QUERY_PROFIT_RECALCULATE = '/bd/profit/report/open/report/settle/compute/manual';
+    //查询请款单列表
+    const QUERY_BILLING_LIST = '/basicOpen/finance/requestFunds/order/list';
+    //查询请款池 - 贷款现结
+    const QUERY_BILLING_POOL = '/basicOpen/finance/requestFundsPool/purchase/list';
+    //查询请款池 - 贷款月结
+    const QUERY_BILLING_POOL_MONTH = '/basicOpen/finance/requestFundsPool/inbound/list';
+    //查询请款池 - 贷款预付款
+    const QUERY_BILLING_POOL_PREPAYMENT = '/basicOpen/finance/requestFundsPool/prepay/list';
+    //查询请款池-物流请款
+    const QUERY_BILLING_POOL_LOGISTICS = '/basicOpen/finance/requestFundsPool/logistics/list';
+    //查询请款池-其他应付款
+    const QUERY_BILLING_POOL_OTHER = '/basicOpen/finance/requestFundsPool/customFee/list';
 }
