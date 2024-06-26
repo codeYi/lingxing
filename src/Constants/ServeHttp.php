@@ -426,6 +426,7 @@ interface ServeHttp
     const QUERY_BILLING_POOL_LOGISTICS = '/basicOpen/finance/requestFundsPool/logistics/list';
     //查询请款池-其他应付款
     const QUERY_BILLING_POOL_OTHER = '/basicOpen/finance/requestFundsPool/customFee/list';
+
     //采购订单
     const QUERY_PURCHASE_ORDER = '/erp/sc/routing/data/local_inventory/purchaseOrderList';
 }
