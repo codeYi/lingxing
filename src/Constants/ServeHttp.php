@@ -429,4 +429,8 @@ interface ServeHttp
 
     //采购订单
     const QUERY_PURCHASE_ORDER = '/erp/sc/routing/data/local_inventory/purchaseOrderList';
+
+    //=================仓库======================
+    //查询仓库列表
+    const QUERY_WAREHOUSE_LIST = '/erp/sc/data/local_inventory/warehouse';
 }
