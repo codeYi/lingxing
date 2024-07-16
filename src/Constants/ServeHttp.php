@@ -57,6 +57,9 @@ interface ServeHttp
     //创建多渠道订单
     const CREATE_MULTI_ORDER = '/order/amzod/api/createOrder';
 
+    //取消多渠道订单
+    const CANCEL_MULTI_ORDER = '/order/amzod/api/cancelOrder';
+
     //查询售后订单列表
     const QUERY_AFTER_ORDER = '/erp/sc/routing/amzod/order/afterSaleList';
 
