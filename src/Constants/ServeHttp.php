@@ -436,4 +436,14 @@ interface ServeHttp
     //=================仓库======================
     //查询仓库列表
     const QUERY_WAREHOUSE_LIST = '/erp/sc/data/local_inventory/warehouse';
+
+    //=================FBA======================
+    //FBA货件
+    const QUERY_FBA_SHIPMENT = '/erp/sc/data/fba_report/shipmentList';
+    //获取货件收货地址
+    const QUERY_FBA_SHIPMENT_ADDRESS = '/basicOpen/openapi/fbaShipment/shoppingAddress';
+    //获取货件装箱情况
+    const QUERY_FBA_SHIPMENT_PACKAGE = '/erp/sc/routing/fba/shipment/boxInfo';
+    //标记货件发货
+    const QUERY_FBA_SHIPMENT_DELIVERY = '/erp/sc/routing/fba/shipment/updateShipmentToShipped';
 }
