@@ -446,4 +446,11 @@ interface ServeHttp
     const QUERY_FBA_SHIPMENT_PACKAGE = '/erp/sc/routing/fba/shipment/boxInfo';
     //标记货件发货
     const QUERY_FBA_SHIPMENT_DELIVERY = '/erp/sc/routing/fba/shipment/updateShipmentToShipped';
+
+    //多平台店铺
+    const QUERY_MULTI_STORE='/pb/mp/shop/v2/getSellerList';
+    
+    //WFS库存列表
+    const QUERY_WFS_INVENTORY = '/cepf/warehouse/api/openApi/queryWFSInventionPage';
+
 }
